@@ -58,3 +58,30 @@ MM2:AddButton({
         })
   	end    
 })
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Jupiter Script Hub"})
+local Tab = Window:MakeTab({
+    Name = "Sword Simulator",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+OrionLib:MakeNotification({
+    Name = "Hello",
+    Content = "Jupiter Is The Best",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+Tab:AddButton({
+	Name = "2Take1",
+	Callback = function()
+        loadstring(game:HttpGet("http://2take1.tk"))() 
+      		print("Loaded 2Take1, Key = AlznScripting")
+  	end    
+})
+Tab:AddButton({
+	Name = "Alzn's Script Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://avascripting.000webhostapp.com/Sword%20Simulator%20Hub"))()  
+      		print("Loaded Alzn Script Hub")
+  	end    
+})
