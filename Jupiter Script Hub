@@ -1,0 +1,60 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Jupiter Remastered"})
+OrionLib:MakeNotification({
+	Name = "Welcome!",
+	Content = "Welcome to Jupiter Hub",
+	Image = "rbxassetid://4483345998",
+	Time = 30
+})
+local SS = Window:MakeTab({
+	Name = "Sword Simulator",
+	Callback = function()
+    print("button pressed")
+    PremiumOnly = false
+})
+local IY = Window:MakeTab({
+	Name = "Infinite Yeld",
+	Callback = function()
+    print("button pressed")
+    PremiumOnly = false
+})
+local MM2 = Window:MakeTab({
+	Name = "MM2",
+	Callback = function()
+    print("button pressed")
+    PremiumOnly = false   
+})
+SS:AddButton({
+	Name = "2Take1",
+	Callback = function()
+        loadstring(game:HttpGet("http://2take1.tk"))()
+  	end    
+})
+SS:AddButton({
+	Name = "Alzn's Script Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://avascripting.000webhostapp.com/Sword%20Simulator%20Hub"))()
+  	end    
+})
+IY:AddButton({
+	Name = "Infinite Yeld",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Coming soon..",
+            Content = "Release When i can be arsed",
+            Image = "rbxassetid://4483345998",
+            Time = 30
+        })
+  	end    
+})
+MM2:AddButton({
+	Name = "MM2",
+	Callback = function()
+        OrionLib:MakeNotification({
+            Name = "Coming soon..",
+            Content = "Release When i can be arsed",
+            Image = "rbxassetid://4483345998",
+            Time = 30
+        })
+  	end    
+})
